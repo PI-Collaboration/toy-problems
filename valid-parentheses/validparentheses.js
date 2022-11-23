@@ -1,8 +1,8 @@
-var isValid = function(s) {
+const isValid = function (s) {
     if (s.length === 1) {
       return false;
     } else {
-      for (let i = 0; i < s.length; i+=2) {
+      for (let i = 0; i < s.length; i += 2) {
         let isTrue = true;
         switch (s[i]) {
           case '[':
@@ -33,10 +33,3 @@ var isValid = function(s) {
       return isTrue
     }
 }
-
-console.log(isValid('[')) // false
-console.log(isValid('[]'))
-console.log(isValid('[]{}'))
-console.log(isValid('[]{}]()'))
-
-
