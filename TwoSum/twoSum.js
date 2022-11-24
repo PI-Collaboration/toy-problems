@@ -1,5 +1,3 @@
-
-
 /*
 Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
 
@@ -12,19 +10,18 @@ You can return the answer in any order.
 // Space: O(N)
 
 const twoSum = (array, target) => {
-    const obj = {};
+  const obj = {};
 
-    for (let i = 0; i < array.length; i++) {
-        obj[array[i]] = i;
+  for (let i = 0; i < array.length; i++) {
+    obj[array[i]] = i;
+  }
+
+  for (let i = 0; i < array.length; i++) {
+    const temp = target - array[i];
+    if (obj[temp] && obj[temp] !== array[i]) {
+      return [obj[temp], i];
     }
+  }
+};
 
-    for (let i = 0; i < array.length; i++) {
-        let temp = target - array[i];
-        if (obj[temp] && obj[temp] !== array[i]) {
-            return [obj[temp], i]
-        }
-    }
-}
-
-
-console.log(twoSum([2,4,6], 10));
+export default twoSum;

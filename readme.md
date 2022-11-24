@@ -1,24 +1,29 @@
-About using Yarn instead of NPM
-Use 'yarn install' to install/update dependencies.
+## Using NPM and Yarn to install dependencies(terminal):
+```console
+npm install yarn;
+yarn install;
+```
 
-About using Jest
-Command: 'yarn jest' for all jest files, or 'yarn jest /balanced-binary-tree' for a specific folder containing the .js and the jest file.
-1. All test MUST be written in a file with a '.test.js' extension
-2. All functions must be imported into and used in the tests file
-3. This is the most basic format and methods for the tests.  For more, refer to
-   toy-problems/balanced-binary-tree/balancedBinaryTree.test.js
-   or visit: https://jestjs.io/docs/using-matchers
-
+## About using Jest
+- [ ] 1. Create a folder. Inside of the folder,
+- [ ] 2. Create a '.js' file for the function(s), and a separate '.test.js' file for the test(s).
+- [ ] 3. Export the function(s) from the .js file and import them into the test(s) file.
+- [ ] 4. Write the test(s).  This is the most basic format and methods for the test(s). For more, refer to [this folder as an example](../toy-problems/balanced-binary-tree) or visit https://jestjs.io/docs/using-matchers
+```js
     describe('general description of the function goes here', () => {
       it('description of the FIRST specific case being tested goes here', () => {
-        expect(someFuncWeTesting(input1)).toBe(theExpectedOutputGoesHere);
+        expect(someFuncWeTesting(testInput1)).toBe(expectedOutput1);
       });
       it('description of the SECOND specific case being tested goes here', () => {
-        expect(someFuncWeTesting(input1)).toBe(theExpectedOutputGoesHere);
+        expect(someFuncWeTesting(testInput2)).toBe(expectedOutput2);
       });
       ...
       it('description of the Nth specific case being tested goes here', () => {
-        expect(someFuncWeTesting(input1)).toBe(theExpectedOutputGoesHere);
+        expect(someFuncWeTesting(testInputN)).toBe(expectedOutputN);
       });
     });
-
+```
+#### Jest Commands:
+Reminder: more tests will take longer to run.
+* 'yarn jest' for ALL jest files in the REPO (can take longer if there are many tests), or
+* 'yarn jest oneTestFile.test.js' to target a specific jest file with specific tests.

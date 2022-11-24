@@ -15,7 +15,6 @@ describe('all these bracket combinations should return \'FALSE\'', () => {
   const testInputs = ['p', '{]', '[}', '(]', '[]{[', '[]{}({', '[][][]{'];
   testCases.forEach((a, b) => {
     it(a, () => {
-      console.log(isValid(testInputs[b]));
       expect(isValid(testInputs[b])).toBe(false);
     });
   });
