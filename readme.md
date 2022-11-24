@@ -27,5 +27,5 @@ $ yarn install;
 
 Commmand | Description
 -|-
-$ yarn jest; | Executes ALL jest files in the REPO (can take longer if there are many tests)
-$ yarn jest aSpecificTestFile.test.js; | Can executes a specific jest FILE or all jest files in a specific FOLDER
+$ yarn jest; | Executes **ALL** jest files in the REPO (can take longer if there are many tests)
+$ yarn jest aSpecificTestFile.test.js; | Executes a specific jest **FILE** ***OR*** all jest files in a specific **FOLDER**
