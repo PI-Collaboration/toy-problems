@@ -23,7 +23,7 @@ $ yarn install;
       });
     });
 ```
-#### Jest Commands more tests will take longer to run.
+#### Jest Commands - more tests will take longer to run.
 
 Commmand | Description
 -|-
