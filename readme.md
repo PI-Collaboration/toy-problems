@@ -1,7 +1,7 @@
 ## Using NPM and Yarn to install dependencies(terminal):
 ```console
-npm install yarn;
-yarn install;
+$ npm install yarn;
+$ yarn install;
 ```
 
 ## About using Jest
@@ -23,7 +23,9 @@ yarn install;
       });
     });
 ```
-#### Jest Commands:
-Reminder: more tests will take longer to run.
-* 'yarn jest' for ALL jest files in the REPO (can take longer if there are many tests), or
-* 'yarn jest oneTestFile.test.js' to target a specific jest file with specific tests.
+#### Jest Commands more tests will take longer to run.
+
+Commmand | Description
+-|-
+$ yarn jest; | Executes ALL jest files in the REPO (can take longer if there are many tests)
+$ yarn jest aSpecificTestFile.test.js; | Can executes a specific jest FILE or all jest files in a specific FOLDER
