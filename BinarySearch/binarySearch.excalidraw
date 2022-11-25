@@ -1,0 +1,46 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://marketplace.visualstudio.com/items?itemName=pomdtr.excalidraw-editor",
+  "elements": [
+    {
+      "id": "--q8KbL_zN-kM2GoVeuic",
+      "type": "text",
+      "x": -199,
+      "y": 32,
+      "width": 1602,
+      "height": 100,
+      "angle": 0,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "strokeSharpness": "sharp",
+      "seed": 637793587,
+      "version": 183,
+      "versionNonce": 1527240669,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1668617596692,
+      "link": null,
+      "locked": false,
+      "text": "Given an array of integers nums which is sorted in ascending order, and an integer target, write a function to search target in nums.\nIf target exists, then return its index. Otherwise, return -1.\n\nYou must write an algorithm with O(log n) runtime complexity.",
+      "fontSize": 20.555555555555543,
+      "fontFamily": 3,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "baseline": 95,
+      "containerId": null,
+      "originalText": "Given an array of integers nums which is sorted in ascending order, and an integer target, write a function to search target in nums.\nIf target exists, then return its index. Otherwise, return -1.\n\nYou must write an algorithm with O(log n) runtime complexity."
+    }
+  ],
+  "appState": {
+    "gridSize": null,
+    "viewBackgroundColor": "#ffffff"
+  },
+  "files": {}
+}
