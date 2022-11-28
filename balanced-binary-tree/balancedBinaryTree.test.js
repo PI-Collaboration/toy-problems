@@ -1,5 +1,19 @@
 import { isBalanced, TreeNode } from './balancedBinaryTree.js';
-
+const makeATree = (arr) => {
+  const node = { val: arr[0], left: null, right: null };
+  const totalLevels = Math.sqrt(arr.length + 1) - 1;
+  const helper = (node, lastIndex, currentLevel) => {
+    if (currentLevel < totalLevels) {
+      currentLevel++;
+      node.left = { val: arr[2 * lastIndex + 1], left: null, right: null };
+      node.right = { val: arr[2 * lastIndex + 1 + 1], left: null, right: null };
+      helper(node.left, 2 * lastIndex + 1, currentLevel);
+      helper(node.right, 2 * lastIndex + 1 + 1, currentLevel);
+    }
+  };
+  helper(node, 0, 0);
+  return node;
+};
 const trees = [];
 let node1 = new TreeNode(3);
 let node2 = new TreeNode(9);
@@ -30,10 +44,16 @@ trees.push(node1);
 const testCases = ['when a tree is balanced, the function outputs TRUE', 'when a tree is NOT balanced, the function outputs FALSE'];
 const testOutputs = [true, false];
 
+// describe('this function tests whether a tree is balnced or not', () => {
+//   testCases.forEach((a, b) => {
+//     it(a, () => {
+//       expect(isBalanced(trees[b])).toBe(testOutputs[b]);
+//     });
+//   });
+// });
+
 describe('this function tests whether a tree is balnced or not', () => {
-  testCases.forEach((a, b) => {
-    it(a, () => {
-      expect(isBalanced(trees[b])).toBe(testOutputs[b]);
-    });
+  it('klkjkljklj', () => {
+    expect(isBalanced(makeATree([3,9,20,null,null,15,7]))).toBe(true);
   });
 });
