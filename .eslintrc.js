@@ -1,7 +1,6 @@
 module.exports = {
   env: {
-    commonjs: true,
-    es2021: true,
+    es6: true,
     node: true,
     jest: true
   },
@@ -9,9 +8,10 @@ module.exports = {
   overrides: [
   ],
   parserOptions: {
-    ecmaVersion: 'latest'
+    warnOnUnsupportedTypeScriptVersion: true,
+    parser: '@typescript-eslint/parser'
   },
   rules: {
     semi: [2, 'always']
   }
-}
+};
