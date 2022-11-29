@@ -1,4 +1,5 @@
 import { isBalanced, TreeNode } from './balancedBinaryTree.js';
+import lca from '../LCA_Binary_Tree/lca.js'
 const makeATree = (arr) => {
   const node = { val: arr[0], left: null, right: null };
   const totalLevels = Math.sqrt(arr.length + 1) - 1;
@@ -54,6 +55,6 @@ const testOutputs = [true, false];
 
 describe('this function tests whether a tree is balnced or not', () => {
   it('klkjkljklj', () => {
-    expect(isBalanced(makeATree([3,9,20,null,null,15,7]))).toBe(true);
+    expect(isBalanced(lca([3,9,20,null,null,15,7]))).toBe(true);
   });
 });

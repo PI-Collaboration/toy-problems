@@ -14,6 +14,5 @@ const makeATree = (arr) => {
   return node;
 };
 
-//console.log(JSON.stringify(makeATree([0,1,2,3,4,5,6]),'',2));
 console.log(JSON.stringify(makeATree([6,2,8,0,4,7,9,null,null,3,5]),'',2))
 export default makeATree;
