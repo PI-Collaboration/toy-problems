@@ -7,6 +7,28 @@ function TreeNode (val, left, right) {
 /**
  * @param {TreeNode} root
  * @return {boolean}
+ * Planning steps available after line 30
+ */
+
+const isBalanced = function (root) {
+  let treeIsBalanced = true;
+  const recFunc = (node, depth) => {
+    if (node === null) {
+      return depth;
+    } else {
+      const leftDepth = recFunc(node.left, depth + 1);
+      const rightDepth = recFunc(node.right, depth + 1);
+      if (treeIsBalanced && Math.abs(leftDepth - rightDepth) > 1) {
+        treeIsBalanced = false;
+      }
+      return rightDepth > leftDepth ? rightDepth : leftDepth;
+    }
+  };
+  recFunc(root, 0);
+  return treeIsBalanced;
+};
+
+/**
  * height on the left and right subtree of ANY node differ by not more than 1.
  * Input: tree
  * Output: boolean
@@ -37,26 +59,4 @@ function TreeNode (val, left, right) {
  *  call teh recursive function by passing in the original root and a starting value of zero
  *  return the value of treeIsBalanced
  */
-
-const isBalanced = function (root) {
-  let treeIsBalanced = true; // boolean tracker
-  const recFunc = (node, depth) => {
-    if (node === null) { // if the node does not exist
-      return depth; // do not increase depth, only return depth
-    } else {
-      const leftDepth = recFunc(node.left, depth + 1); // get the max depth of the left branch of this node, starting at the depth
-      // plus 1 (to account for this level)
-      const rightDepth = recFunc(node.right, depth + 1); // get the max depth of the right branch of this node, starting at the depth
-      // plus 1 (to account for this level)
-      if (treeIsBalanced && Math.abs(leftDepth - rightDepth) > 1) { // if tracker is unchanged from the original assignment AND the
-        // difference is greater than 1
-        treeIsBalanced = false; // change the 'treeIsBalanced' tracker to false
-      }
-      return rightDepth > leftDepth ? rightDepth : leftDepth; // return the greater of the two depths
-    }
-  };
-  recFunc(root, 0); // call recFunc by passing i the root and 0 as the original depth
-  return treeIsBalanced;
-};
-
-export { isBalanced, TreeNode };
+export default isBalanced;
