@@ -3,7 +3,7 @@ const makeATree = (arr) => {
   const totalLevels = Math.sqrt(arr.length + 1) - 1;
   const helper = (node, lastIndex, currentLevel) => {
     currentLevel++;
-    if (currentLevel < totalLevels) {
+    if (currentLevel <= totalLevels) {
       if (arr[2 * lastIndex + 1] !== null) {
         node.left = { val: arr[2 * lastIndex + 1], left: null, right: null };
         helper(node.left, 2 * lastIndex + 1, currentLevel);
@@ -18,10 +18,5 @@ const makeATree = (arr) => {
   return node;
 };
 
-<<<<<<< HEAD:utils.js
 console.log(JSON.stringify(makeATree([6,2,8,0,4,7,9,null,null,3,5]),'',2))
-export default makeATree;
-=======
-// export default makeATree;
-console.log(JSON.stringify(makeATree([1, 2, 2, 3, 3, null, null, 4, 4])), '', 2);
->>>>>>> da8fa79143918b30bfa4097b5f8ca6a824c3d7a4:utils2.js
+//export default makeATree;
