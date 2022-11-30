@@ -16,12 +16,12 @@ function TreeNode (val, left, right) {
   this.right = (right === undefined ? null : right);
 }
 
-const tree = new TreeNode(6);
+const tree = new TreeNode(4);
 const node1 = new TreeNode(2);
-const node2 = new TreeNode(8);
-const node3 = new TreeNode(0);
-const node4 = new TreeNode(4);
-const node5 = new TreeNode(7);
+const node2 = new TreeNode(7);
+const node3 = new TreeNode(1);
+const node4 = new TreeNode(3);
+const node5 = new TreeNode(6);
 const node6 = new TreeNode(9);
 
 tree.left = node1;
@@ -32,4 +32,5 @@ node1.right = node4;
 node2.left = node5;
 node2.right = node6;
 
-console.log(invertTree(tree));
+// console.log(invertTree(tree));
+export default invertTree;
