@@ -1,22 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1669677232494" clover="3.2.0">
-  <project timestamp="1669677232494" name="All files">
-    <metrics statements="13" coveredstatements="1" conditionals="6" coveredconditionals="0" methods="1" coveredmethods="0" elements="20" coveredelements="1" complexity="0" loc="13" ncloc="13" packages="1" files="1" classes="1"/>
-    <file name="validanagram.js" path="/Users/irvin/Documents/githubrepos/PICollab/toy-problems/Valid_Anagram/validanagram.js">
-      <metrics statements="13" coveredstatements="1" conditionals="6" coveredconditionals="0" methods="1" coveredmethods="0"/>
-      <line num="43" count="1" type="stmt"/>
-      <line num="44" count="0" type="cond" truecount="0" falsecount="2"/>
-      <line num="45" count="0" type="stmt"/>
-      <line num="47" count="0" type="stmt"/>
-      <line num="48" count="0" type="stmt"/>
-      <line num="49" count="0" type="cond" truecount="0" falsecount="2"/>
-      <line num="50" count="0" type="stmt"/>
-      <line num="52" count="0" type="stmt"/>
-      <line num="55" count="0" type="stmt"/>
-      <line num="56" count="0" type="cond" truecount="0" falsecount="2"/>
-      <line num="57" count="0" type="stmt"/>
-      <line num="59" count="0" type="stmt"/>
-      <line num="62" count="0" type="stmt"/>
-    </file>
+<coverage generated="1669872984067" clover="3.2.0">
+  <project timestamp="1669872984067" name="All files">
+    <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0" elements="0" coveredelements="0" complexity="0" loc="0" ncloc="0" packages="0" files="0" classes="0"/>
   </project>
 </coverage>
