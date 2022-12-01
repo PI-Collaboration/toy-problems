@@ -24,5 +24,8 @@
   },
   "dependencies": {
     "yarn": "^1.22.19"
+  },
+  "scripts": {
+    "test": "jest"
   }
 }
