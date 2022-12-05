@@ -18,7 +18,7 @@
  * 
  */
 
-var hasCycle = function (head) {
+/* var hasCycle = function (head) {
   const headKeys = Object.keys(head); // []
 
   if (headKeys.includes('beenHereProof')) {
@@ -30,7 +30,23 @@ var hasCycle = function (head) {
     hasCycle(head.next)
   }
   return false
+}; */
+
+var hasCycle = function(head) {
+    let s = new Set();
+  while (head !== null) {
+      if (s.has(head))
+      return true;
+      // if we are seeing this for the 
+      // first time insert into hash 
+      s.add(head);
+      head = head.next;
+  }
+
+  return false;
+
 };
+
 const cycleList = { val: 2, next: { val:0, next:{ val: 4, next: null}}}
 cycleList.next.next.next = cycleList;
 const headList = {val: 3, next: cycleList}
