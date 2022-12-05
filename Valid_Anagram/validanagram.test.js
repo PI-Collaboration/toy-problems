@@ -1,4 +1,4 @@
-import isAnagram from './validAnagram.js';
+import isAnagram from './validanagram.js';
 
 describe('validAna - nothing yet', () => {
   it('does something', () => {

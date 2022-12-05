@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Javascript, Jest, ESLint, Babel",
   "main": "index.js",
-  "type": "module",
   "repository": "https://github.com/PI-Collaboration/toy-problems",
   "author": "Philip Koller and Irvin Solano",
   "license": "MIT",

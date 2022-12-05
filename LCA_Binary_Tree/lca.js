@@ -1,12 +1,12 @@
 // Given a binary search tree (BST), find the lowest common ancestor (LCA) node of two given nodes in the BST.
 
-import makeATree from '../utils.js';
+import makeATree from '.././utils/utils.js';
 
 const lca = (root, p, q) => {
   const helper = (root) => {
     if (root === null ) {
        return null;
-    } 
+    }
     if (root.val === p || root.val === q) {
       return root
     }
