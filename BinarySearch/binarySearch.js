@@ -27,7 +27,7 @@ You must write an algorithm with O(log n) runtime complexity.
 
    while(arry[midpoint] !== target) {
         if (array.length === 1) {
-           return array[0] === target 
+           return array[0] === target +
         }
          if (target < array[midpoint] ) {
             array = array.splice(midpoint, array.lengh -1); 
